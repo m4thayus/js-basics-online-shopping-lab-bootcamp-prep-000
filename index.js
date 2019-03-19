@@ -11,7 +11,8 @@ function setCart(c) {
 
 function addToCart(item) {
  var newItem = {};
- newItem[item] = item
+ 
+ newItem = {'name': item, 'price': n}
  cart.push(newItem);
  return `${item} has been added to your cart.`;
 }
