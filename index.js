@@ -33,7 +33,7 @@ function viewCart() {
 }
 
 function total() {
-  grandTotal = 0;
+  var grandTotal = 0;
   for (var i = 0; i < cart.length; i++) {
     grandTotal = grandTotal + cart[i].itemPrice;
   }
@@ -41,9 +41,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  if (cardNumber === undefined) {
+    return 
+  }
 }
