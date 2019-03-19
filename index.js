@@ -20,14 +20,14 @@ function viewCart() {
    return "Your shopping cart is empty.";
  }
  else {
-   var i = cart.length - 1
-   var str = "."
+   var i = cart.length - 1;
+   var str = ".";
    while (i > 0) {
-     str = cart[i].name + ' at ' + cart[i].price + str;
+     str = ', ' + cart[i].name + ' at ' + cart[i].price + str;
      i--;
    }
-
-   return str + "In your cart, you have ";
+   str = cart[i].name + ' at ' + cart[i].price + str;
+   return "In your cart, you have " + str;
  }
 }
 
