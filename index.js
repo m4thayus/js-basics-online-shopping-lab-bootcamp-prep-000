@@ -24,10 +24,10 @@ function viewCart() {
    var i = cart.length - 1;
    var str = ".";
    while (i > 0) {
-     str = ', ' + cart[i].name + ' at ' + cart[i].price + str;
+     str = ', ' + cart[i].itemName + ' at ' + cart[i].itemPrice + str;
      i--;
    }
-   str = cart[i].name + ' at ' + cart[i].price + str;
+   str = cart[i].itemName + ' at ' + cart[i].itemPrice + str;
    return "In your cart, you have " + str;
  }
 }
