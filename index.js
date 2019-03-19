@@ -49,7 +49,10 @@ function removeFromCart(item) {
     }
   }
   if (check == 1) {
-    return cart
+    return cart;
+  }
+  else {
+    return 
   }
 }
 
