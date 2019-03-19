@@ -32,7 +32,11 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  grandTotal = 0;
+  for (var i = 0; i < cart.length; i++) {
+    grandTotal = grandTotal + cart[i].price;
+  }
+  return grandTotal;
 }
 
 function removeFromCart(item) {
