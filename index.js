@@ -16,7 +16,12 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if ()
+ if (cart === undefined || cart.length < 1) {
+   return 
+ }
+ else {
+   
+ }
 }
 
 function total() {
