@@ -12,11 +12,11 @@ function setCart(c) {
 function addToCart(item) {
  var newItem = {};
  cart.push(newItem);
- return `$item
+ return `${item} has been added to your cart.`;
 }
 
 function viewCart() {
-  // write your code here
+  if ()
 }
 
 function total() {
