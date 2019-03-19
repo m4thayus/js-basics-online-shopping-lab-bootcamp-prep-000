@@ -22,8 +22,9 @@ function viewCart() {
  else {
    var str = "In your cart, you have ";
    if ( cart.length == 1 ) {
-     return str + cart[1].name + ' at '
- }
+     return str + cart[1].name + ' at ' + cart[1].price;
+   }
+   else ()
    
  }
 }
