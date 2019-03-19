@@ -41,11 +41,15 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var check = 0
+  var check = 0;
   for (var i = 0; i < cart.length; i++) {
     if (cart[i].itemName === item) {
-      
+      cart.splice(i, 1);
+      check = 1;
     }
+  }
+  if (check == 1) {
+    return cart
   }
 }
 
