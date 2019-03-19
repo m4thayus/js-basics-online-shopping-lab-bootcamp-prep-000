@@ -22,7 +22,7 @@ function viewCart() {
  else {
    var str = "In your cart, you have ";
    if ( cart.length == 1 ) {
-     return str + 
+     return str + cart[1].name + ' at '
  }
    
  }
